@@ -1,11 +1,11 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-import main.java.employees.Keeper;
+import employees.Keeper;
 
 /**
  * This class holds the Cages-Keepers assignments.

@@ -1,6 +1,6 @@
-package main.java.employees;
+package employees;
 
-import main.java.clydeconservationsystem.ValidationException;
+import clydeconservationsystem.ValidationException;
 
 /**
  * This class will use the Builder design pattern.

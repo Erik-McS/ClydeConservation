@@ -1,12 +1,12 @@
-package main.java.applicationEntry;
+package applicationEntry;
 
-import main.java.animals.Menagerie;
-import main.java.clydeconservationsystem.AssignmentTable;
-import main.java.clydeconservationsystem.AssignmentsCollection;
-import main.java.clydeconservationsystem.Cage;
-import main.java.clydeconservationsystem.CagesCollection;
-import main.java.employees.AssistantKeeper;
-import main.java.employees.EmployeeRoster;
+import animals.Menagerie;
+import clydeconservationsystem.AssignmentTable;
+import clydeconservationsystem.AssignmentsCollection;
+import clydeconservationsystem.Cage;
+import clydeconservationsystem.CagesCollection;
+import employees.AssistantKeeper;
+import employees.EmployeeRoster;
 
 /**
  * Test class, used in some unit testing

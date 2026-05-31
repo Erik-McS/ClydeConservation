@@ -1,10 +1,10 @@
-package main.java.animals;
+package animals;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import main.java.clydeconservationsystem.CagesCollection;
+import clydeconservationsystem.CagesCollection;
 
 /**
  * The Menagerie class will store all the animals in Clyde Conservation's care.

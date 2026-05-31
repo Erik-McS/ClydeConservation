@@ -1,9 +1,9 @@
-package test.java;
-import main.java.animals.Bird;
-import main.java.animals.Mammal;
-import main.java.clydeconservationsystem.LargeCage;
-import main.java.clydeconservationsystem.MediumCage;
-import main.java.clydeconservationsystem.SmallCage;
+
+import animals.Bird;
+import animals.Mammal;
+import clydeconservationsystem.LargeCage;
+import clydeconservationsystem.MediumCage;
+import clydeconservationsystem.SmallCage;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

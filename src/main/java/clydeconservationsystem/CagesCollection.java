@@ -1,10 +1,10 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import main.java.animals.Animal;
+import animals.Animal;
 
 /**
  * Class to hold the cages owned by Clyde Conservation

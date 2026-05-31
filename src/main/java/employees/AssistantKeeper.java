@@ -1,6 +1,6 @@
-package main.java.employees;
+package employees;
 
-import main.java.clydeconservationsystem.ValidationException;
+import clydeconservationsystem.ValidationException;
 
 /**
  * Generic class, just usedto fill the employee roster and be assigned to a group of cage.

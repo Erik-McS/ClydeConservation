@@ -1,11 +1,11 @@
-package main.java.animals;
+package animals;
 
 import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import main.java.clydeconservationsystem.Menus;
-import main.java.clydeconservationsystem.ValidationException;
+import clydeconservationsystem.Menus;
+import clydeconservationsystem.ValidationException;
 
 /**
  * This the parent class of the animals handled by Clyde Conservation.

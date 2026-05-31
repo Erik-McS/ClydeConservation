@@ -1,14 +1,14 @@
-package main.java.applicationEntry;
+package applicationEntry;
 
-import main.java.animals.Bird;
-import main.java.animals.Mammal;
-import main.java.animals.Menagerie;
-import main.java.animals.Reptile;
-import main.java.clydeconservationsystem.*;
-import main.java.employees.Administrator;
-import main.java.employees.AssistantKeeper;
-import main.java.employees.EmployeeRoster;
-import main.java.employees.HeadKeeper;
+import animals.Bird;
+import animals.Mammal;
+import animals.Menagerie;
+import animals.Reptile;
+import clydeconservationsystem.*;
+import employees.Administrator;
+import employees.AssistantKeeper;
+import employees.EmployeeRoster;
+import employees.HeadKeeper;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 /**
  * Custom exception class to catch incorrect values for the clydeconservationsystem package

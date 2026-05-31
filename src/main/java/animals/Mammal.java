@@ -1,6 +1,6 @@
-package main.java.animals;
+package animals;
 
-import main.java.clydeconservationsystem.ValidationException;
+import clydeconservationsystem.ValidationException;
 
 /**
  * Class used to describe mammals

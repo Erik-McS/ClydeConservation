@@ -1,11 +1,11 @@
-package test.java;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import main.java.animals.Bird;
-import main.java.animals.Mammal;
-import main.java.animals.Menagerie;
-import main.java.animals.Reptile;
+import animals.Bird;
+import animals.Mammal;
+import animals.Menagerie;
+import animals.Reptile;
 
 import static org.junit.jupiter.api.Assertions.*;
 

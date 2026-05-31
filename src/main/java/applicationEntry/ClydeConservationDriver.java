@@ -1,7 +1,7 @@
-package main.java.applicationEntry;
+package applicationEntry;
 
-import main.java.clydeconservationsystem.*;
-import main.java.employees.*;
+import clydeconservationsystem.*;
+import employees.*;
 
 /**
  * Main entry of the program

@@ -1,8 +1,8 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.io.Serializable;
 
-import main.java.animals.Animal;
+import animals.Animal;
 
 
 /**
