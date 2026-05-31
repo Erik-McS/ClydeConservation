@@ -3,7 +3,7 @@ package animals;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
-
+import java.util.logging.Logger;
 import clydeconservationsystem.CagesCollection;
 
 /**
@@ -20,7 +20,7 @@ import clydeconservationsystem.CagesCollection;
  *
  */
 public class Menagerie {
-
+    private static final Logger LOGGER = Logger.getLogger(Menagerie.class.getName());
     // ArrayList to store the animals
     private static ArrayList<Animal> menagerieCollection=new ArrayList<>();
     // constant to hold the name of the menagerie file
@@ -34,14 +34,14 @@ public class Menagerie {
         // local variable to display the animal position in the collection.
         // if empty, display status.
         if (menagerieCollection.isEmpty())
-            System.out.println("There is no animals stored");
+            LOGGER.info("There is no animals stored");
         else{
             // using an iterator to loop over the animal collection.
             Iterator<Animal> iter=menagerieCollection.iterator();
             while (iter.hasNext()){
                 // displaying the index and the animal details.
                 Animal animal= iter.next();
-                System.out.println(animal.getDetails());
+                LOGGER.info(animal.getDetails());
             }
         }
     }
@@ -55,7 +55,7 @@ public class Menagerie {
             while (iter.hasNext()) {
                 Animal an = iter.next();
                 if (!CagesCollection.isAssigned(an)) {
-                    System.out.println("--- Animal ID: " + an.getAnimalID() + " --- Name: " + an.getName() +
+                    LOGGER.info("--- Animal ID: " + an.getAnimalID() + " --- Name: " + an.getName() +
                             " --- Type: " + an.getType() + " --- Category: " + an.getCategory());
                 }
             }
@@ -124,7 +124,7 @@ public class Menagerie {
             oos.writeObject(menagerieCollection);
         }
         catch (IOException e){
-            System.out.println("Save_Menagerie: "+e.getMessage());
+            LOGGER.info("Save_Menagerie: "+e.getMessage());
         }
     }
     /**
@@ -134,27 +134,17 @@ public class Menagerie {
      */
     public static void loadMenagerie(){
 
-        try
-        (
-            FileInputStream fis=new FileInputStream(FILE_NAME);
-            ObjectInputStream ois=new ObjectInputStream(fis);
-        )
-        {
-            menagerieCollection.clear();
-            try{
-                menagerieCollection=(ArrayList<Animal>)ois.readObject();
-                // modifying the ID_base to account for saved animal
-                Animal.ANIMAL_ID_BASE=Animal.ANIMAL_ID_BASE+menagerieCollection.size();
-            }
-            catch (ClassNotFoundException e){
-                System.out.println("Load_Menagerie1: "+e.getMessage());
-            }
-        }
-        catch (IOException e){
-            System.out.println("Load_Menagerie2: "+e.getMessage());
-        }
+    try (FileInputStream fis = new FileInputStream(FILE_NAME);
+        ObjectInputStream ois = new ObjectInputStream(fis)) {
+        menagerieCollection.clear();
+        menagerieCollection = (ArrayList<Animal>) ois.readObject();
+        Animal.offsetIdBase(menagerieCollection.size());
+        }catch (ClassNotFoundException e) {
+        LOGGER.warning("Load_Menagerie1: " + e.getMessage());
+    } catch (IOException e) {
+        LOGGER.warning("Load_Menagerie2: " + e.getMessage());
     }
-
+    }
     /**
      * Method to check if an animal exists in the menagerie
      * @param animal Animal to check

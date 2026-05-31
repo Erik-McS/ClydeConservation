@@ -1,13 +1,15 @@
 package animals;
 
 import clydeconservationsystem.ValidationException;
-
+import java.util.logging.Logger;
 /**
  * Class used to describe birds
  * <p>
  * it will be used as it own type, further developments could add children types to it
  */
 public class Bird extends Animal {
+
+    private static final Logger LOGGER = Logger.getLogger(Bird.class.getName());
     /**
      * The default constructor will use the setters implemented in the parent class
      * <p>
@@ -20,7 +22,7 @@ public class Bird extends Animal {
         setDateOfBirth();
         setDateOfAcquisition();
         // using the static variable from the parent class to produce a unique ID
-        this.animalID= ANIMAL_ID_BASE++;
+        this.animalID= getNextId();
         // the Animal is not assigned to a cage by default
         setCaged(false);
     }
@@ -42,12 +44,12 @@ public class Bird extends Animal {
             setSex(sex);
             setDateOfAcquisition(doA);
             setDateOfBirth(doB);
-            this.animalID= ANIMAL_ID_BASE++;
+            this.animalID= getNextId();
             // the Animal is not assigned to a cage by default
             setCaged(false);
         }
         catch (ValidationException ex){
-            System.out.println(ex.getMessage());
+            LOGGER.warning(ex.getMessage());
         }
     }
 

@@ -21,6 +21,7 @@ import employees.*;
  * This class will have a private constructor to forbid the instantiation of an object.
  * @author Erik
  */
+@SuppressWarnings("java:S106")
 public class Menus {
     // Scanner object to get the user's menu choice.
     private static final Scanner sc=new Scanner(System.in);

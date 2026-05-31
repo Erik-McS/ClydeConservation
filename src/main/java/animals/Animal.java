@@ -3,7 +3,7 @@ package animals;
 import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+import java.util.logging.Logger;
 import clydeconservationsystem.Menus;
 import clydeconservationsystem.ValidationException;
 
@@ -26,10 +26,11 @@ public abstract class Animal implements Serializable {
     private String dateOfAcquisition;
     private String sex;
     private boolean isCaged;
+    private static final Logger LOGGER = Logger.getLogger(Animal.class.getName());
     /**
      * This variable is used to generate unique animal IDs
      */
-    public static int ANIMAL_ID_BASE =200;
+    private static int animalIdBase = 200;
     /**
      * Animal ID
      */
@@ -76,11 +77,11 @@ public abstract class Animal implements Serializable {
     public void setName(){
         do {
             String nameValidation="(\\p{Upper})(\\p{Lower}){1,12}";
-            String name=Menus.setAnimalName();
-            if (name.matches(nameValidation))
-                this.name=name;
+            String nameTemp=Menus.setAnimalName();
+            if (nameTemp.matches(nameValidation))
+                this.name=nameTemp;
             else {
-                System.out.println("Invalid Animal name format");
+                LOGGER.warning("Invalid Animal name format");
                 this.name=null;
             }
         }
@@ -116,14 +117,14 @@ public abstract class Animal implements Serializable {
     public void setDateOfBirth(){
         do {
             // trying to get valid date
-            Pattern validation=Pattern.compile("^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$");
+            Pattern validation=Pattern.compile("^(3[01]|[12]\\d|0[1-9])/(1[0-2]|0[1-9])/\\d{4}$");
             String date=Menus.setAnimalDoB();
             Matcher match= validation.matcher(date);
 
             if (match.matches())
                 this.dateOfBirth=date;
             else{
-                System.out.println("Invalid date format: please use dd/mm/yyyy");
+                LOGGER.warning("Invalid date format: please use dd/mm/yyyy");
                 this.dateOfBirth=null;
             }
         }while (this.dateOfBirth==null);
@@ -157,14 +158,14 @@ public abstract class Animal implements Serializable {
     public void setDateOfAcquisition(){
         do {
             // trying to get valid date
-            Pattern validation=Pattern.compile("^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$");
+            Pattern validation=Pattern.compile("^(3[01]|[12]\\d|0[1-9])/(1[0-2]|0[1-9])/\\d{4}$");
             String date=Menus.setAnimalDoA();
             Matcher match= validation.matcher(date);
 
             if (match.matches())
                 this.dateOfAcquisition=date;
             else{
-                System.out.println("Invalid date format: please use dd/mm/yyyy");
+                  LOGGER.warning("Invalid date format: please use dd/mm/yyyy");
                 this.dateOfAcquisition = null;
             }
         }while (this.dateOfAcquisition==null);
@@ -270,4 +271,11 @@ public abstract class Animal implements Serializable {
         return "";
     }
 
+    public static int getNextId() {
+        return animalIdBase++;
+    }
+
+    public static void offsetIdBase(int offset) {
+        animalIdBase += offset;
+    }
 }

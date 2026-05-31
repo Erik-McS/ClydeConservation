@@ -1,5 +1,7 @@
 package animals;
 
+import java.util.logging.Logger;
+
 import clydeconservationsystem.ValidationException;
 
 /**
@@ -8,6 +10,7 @@ import clydeconservationsystem.ValidationException;
  * it will be used as it own type, further developments could add children types to it
  */
 public class Mammal extends Animal {
+    private static final Logger LOGGER = Logger.getLogger(Mammal.class.getName());
     // class for the Mammal type
     /**
      * The default constructor will use the setters implemented in the parent class
@@ -21,7 +24,7 @@ public class Mammal extends Animal {
         setDateOfBirth();
         setDateOfAcquisition();
         // using the static variable from the parent class to produce a unique ID
-        this.animalID= ANIMAL_ID_BASE++;
+        this.animalID= getNextId();
         // the Animal is not assigned to a cage by default
         setCaged(false);
     }
@@ -42,12 +45,12 @@ public class Mammal extends Animal {
             setSex(sex);
             setDateOfAcquisition(doA);
             setDateOfBirth(doB);
-            this.animalID= ANIMAL_ID_BASE++;
+            this.animalID= getNextId();
             // the Animal is not assigned to a cage by default
             setCaged(false);
         }
         catch (ValidationException ex){
-            System.out.println(ex.getMessage());
+            LOGGER.warning(ex.getMessage());
         }
     }
 
