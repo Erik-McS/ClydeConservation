@@ -1,6 +1,6 @@
-package test.java;
-import main.java.clydeconservationsystem.ValidationException;
-import main.java.employees.*;
+
+import clydeconservationsystem.ValidationException;
+import employees.*;
 
 import org.junit.jupiter.api.Test;
 

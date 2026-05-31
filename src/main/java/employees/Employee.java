@@ -1,4 +1,4 @@
-package main.java.employees;
+package employees;
 /**
  * Interface used for Clyde Conservation employees.
  * <p>

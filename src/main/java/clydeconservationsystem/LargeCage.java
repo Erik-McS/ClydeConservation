@@ -1,10 +1,10 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import main.java.animals.Animal;
+import animals.Animal;
 
 /**
  * Class to represent the large cages used at Clyde Conservation

@@ -1,10 +1,10 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import main.java.employees.Keeper;
+import employees.Keeper;
 
 /**
  * This class will contain all the AssignmentTable objects created by the Head Keeper

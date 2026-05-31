@@ -1,4 +1,4 @@
-package main.java.employees;
+package employees;
 
 import java.io.*;
 import java.util.ArrayList;

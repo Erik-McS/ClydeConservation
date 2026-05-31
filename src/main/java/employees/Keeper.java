@@ -1,8 +1,8 @@
-package main.java.employees;
+package employees;
 
 import java.io.Serializable;
 
-import main.java.clydeconservationsystem.ValidationException;
+import clydeconservationsystem.ValidationException;
 
 /**
  * This is the generic class for Clyde Conservation Keepers

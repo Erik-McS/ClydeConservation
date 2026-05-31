@@ -1,13 +1,13 @@
-package main.java.clydeconservationsystem;
+package clydeconservationsystem;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import main.java.animals.Bird;
-import main.java.animals.Mammal;
-import main.java.animals.Menagerie;
-import main.java.animals.Reptile;
-import main.java.employees.*;
+import animals.Bird;
+import animals.Mammal;
+import animals.Menagerie;
+import animals.Reptile;
+import employees.*;
 
 /**
  * The Menus class will be used to propose the different menus of the app.

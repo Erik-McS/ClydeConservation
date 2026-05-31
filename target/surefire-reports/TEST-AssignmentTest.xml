@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AssignmentTest" time="0.012" tests="16" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/erik/Documents/clyde-conservation/target/test-classes:/home/erik/Documents/clyde-conservation/target/classes:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/erik/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/erik/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/erik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/erik/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/erik/Documents/clyde-conservation/target/surefire/surefirebooter-20260531172654496_3.jar /home/erik/Documents/clyde-conservation/target/surefire 2026-05-31T17-26-54_454-jvmRun1 surefire-20260531172654496_1tmp surefire_0-20260531172654496_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/erik/Documents/clyde-conservation/target/test-classes:/home/erik/Documents/clyde-conservation/target/classes:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/erik/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/erik/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/erik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/erik/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/erik/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/erik"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/erik/Documents/clyde-conservation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/erik/Documents/clyde-conservation/target/surefire/surefirebooter-20260531172654496_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="user.name" value="erik"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.17.0-29-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/erik/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="/home/erik/Documents/clyde-conservation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="cagesCollection_isAssigned_returnsTrueForAssignedAnimal" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 345 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+The following animal has successfully been added to the cage:
+
+Animal ID: 345 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_assignedCages_zeroWhenNoneAssigned" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 346 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="cagesCollection_getCage_returnsNullForUnknownId" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 347 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_getAssignmentID_isUnique" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 348 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_maxedOut_after4Cages" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 349 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+The following animal has successfully been added to the cage:
+
+Animal ID: 350 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 01/01/2020 --- Date of Acquisition: 01/01/2020
+The following animal has successfully been added to the cage:
+
+Animal ID: 351 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 01/01/2020 --- Date of Acquisition: 01/01/2020
+The following animal has successfully been added to the cage:
+
+Animal ID: 352 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 01/01/2020 --- Date of Acquisition: 01/01/2020
+The following animal has successfully been added to the cage:
+
+Animal ID: 353 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 01/01/2020 --- Date of Acquisition: 01/01/2020
+The following animal has successfully been added to the cage:
+
+Animal ID: 354 --- Type: Bird --- 
+Name: Extra --- Category: Prey --- Sex: Male
+Date of Birth: 01/01/2020 --- Date of Acquisition: 01/01/2020
+This keeper cannot care for any more cages
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_assignCage_fails_withNullCage" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 355 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+Cage do not exists
+]]></system-out>
+  </testcase>
+  <testcase name="cagesCollection_getCage_returnsCorrectCage" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 356 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_assignCage_fails_withEmptyCage" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 357 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+This cage is empty. it cannot be assigned yet.
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_cageIsPresent_returnsTrueAfterAssignment" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 358 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_assignedCages_returnsCorrectCount" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 359 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="validationException_getMessage_containsMessage" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 360 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_setAssignedKeeper_updatesKeeper" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 361 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_cageIsPresent_returnsFalseForUnassignedCage" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 362 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="cagesCollection_addCage_isNotEmptyAfterAdd" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 363 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_assignCage_succeeds_withOccupiedCage" classname="AssignmentTest" time="0.0">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 364 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+  <testcase name="assignmentTable_getAssignedKeeper_returnsCorrectKeeper" classname="AssignmentTest" time="0.001">
+    <system-out><![CDATA[The following animal has successfully been added to the cage:
+
+Animal ID: 365 --- Type: Bird --- 
+Name: Robin --- Category: Prey --- Sex: Male
+Date of Birth: 02/02/2021 --- Date of Acquisition: 05/01/2021
+]]></system-out>
+  </testcase>
+</testsuite>

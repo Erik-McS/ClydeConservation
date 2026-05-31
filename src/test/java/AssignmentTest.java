@@ -1,8 +1,8 @@
-package test.java;
-import main.java.animals.Bird;
-import main.java.clydeconservationsystem.*;
-import main.java.employees.AssistantKeeper;
-import main.java.employees.HeadKeeper;
+
+import animals.Bird;
+import clydeconservationsystem.*;
+import employees.AssistantKeeper;
+import employees.HeadKeeper;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

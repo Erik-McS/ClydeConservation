@@ -1,4 +1,4 @@
-test/java/CageTest.class
-test/java/EmployeeTest.class
-test/java/AssignmentTest.class
-test/java/AnimalTest.class
+EmployeeTest.class
+AssignmentTest.class
+CageTest.class
+AnimalTest.class
